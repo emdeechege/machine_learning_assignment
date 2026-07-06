@@ -1,0 +1,55 @@
+# ==================================================================
+# 1. Python Environment & Virtual Environments
+# ==================================================================
+# Prevents local Python environments from being committed
+venv/
+env/
+.venv/
+.env/
+mlenv/
+*.pyc
+__pycache__/
+
+# ==================================================================
+# 2. Data Files (Large Datasets)
+# ==================================================================
+# Prevents large CSVs and datasets from bloating the repo
+# Keep these in .gitignore and load them from a local path during execution
+data/raw.csv
+data/cleaned.csv
+*.csv
+*.parquet
+*.feather
+*.pkl
+
+# ==================================================================
+# 3. Jupyter Notebook Artifacts
+# ==================================================================
+# Prevents hidden notebook files from cluttering the repo
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ==================================================================
+# 4. IDE & Editor Settings (Optional)
+# ==================================================================
+# Prevents local IDE settings from being shared
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================================================================
+# 5. OS Specific Files
+# ==================================================================
+# Prevents OS-specific hidden files
+.DS_Store
+Thumbs.db
+
+# ==================================================================
+# 6. Logs & Reports (If applicable)
+# ==================================================================
+# Prevents log files from being committed
+*.log
+logs/
+
